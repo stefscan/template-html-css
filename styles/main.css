@@ -2,6 +2,16 @@
 /*             Base                 */
 /*----------------------------------*/
 
+:root {
+    --color-primary: #333;
+    --color-primary-light: #eee;
+    --color-primary-dark: #111;
+
+    --color-accent: #ce5403;
+}
+
+*::before,
+*::after,
 * {
     box-sizing: border-box;
 }
@@ -14,7 +24,7 @@ body {
 
 header {
     height: 400px;
-    color: #efefef;
+    color: var(--color-primary-light);
     border-bottom: 1px solid #333;
     /* Exemple de bannière */
     background-image: url(../images/banner.jpg);
@@ -33,7 +43,7 @@ section {
 
 footer {
     height: 100px;
-    border-top: 1px solid #333;
+    border-top: 1px solid var(--color-primary-dark);
 }
 
 
@@ -46,13 +56,23 @@ footer {
     margin: 0 auto;
 }
 
+/* Rendre medias responsive */
+.fluid {
+    width: 100%;
+    height: auto;
+}
+
+/*-----------------------------*/
+/* Grille d'affichage flexbox */
+
+/* Conteneur */
 .flex {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-/* Grille d'affichage flexbox */
+/* Items */
 
 /* 5 items */
 .item-20 {
@@ -88,8 +108,8 @@ footer {
     display: block;
     border-radius: 5px;
     text-align: center;
-    background-color: #eeeeee;
-    color: #333;
+    background-color: var(--color-accent);
+    color: var(--color-primary-light);
     padding: 8px 5px;
     text-decoration: none;
     max-width: 200px;
@@ -97,8 +117,8 @@ footer {
 }
 
 .btn:hover {
-    background-color: #333;
-    color: #efefef;
+    background-color: var(--color-primary);
+    color: var(--color-primary-light);
 }
 
 
