@@ -5,7 +5,7 @@
  * @author Prénom Nom
  *
  * Created at     : 2023-11-30 15:34:40 
- * Last modified  : 2023-11-30 15:35:43
+ * Last modified  : 2026-03-10 13:24:03
  */
 
 
@@ -19,15 +19,16 @@ console.log("Script 'main.js' chargé...");
 /* Récupérer les éléments nécessaire à l'application */
 
 /* Exemple : */
-let element = document.querySelector("article");
+let bouton = document.querySelector("#js-btn");
 
 
 /*----------------------------------------*/
 /* Ajouter les gestionnaires d'événements */
 
 /* Exemple (sur un click!) : */
-element.addEventListener("click", (e) => {
+bouton.addEventListener("click", (e) => {
 
+    e.preventDefault();
     console.log("L'élément a été cliqué!");
 
 })
