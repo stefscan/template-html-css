@@ -6,7 +6,6 @@
     --color-primary: #333;
     --color-primary-light: #eee;
     --color-primary-dark: #111;
-
     --color-accent: #ce5403;
 }
 
@@ -51,52 +50,16 @@ footer {
 /*           Mise en page           */
 /*----------------------------------*/
 
-.container {
-    width: 80%;
-    margin: 0 auto;
+.flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 /* Rendre medias responsive */
 .fluid {
     width: 100%;
     height: auto;
-}
-
-/*-----------------------------*/
-/* Grille d'affichage flexbox */
-
-/* Conteneur */
-.flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-/* Items */
-
-/* 5 items */
-.item-20 {
-    flex-basis: 19%;
-}
-
-/* 4 items */
-.item-25 {
-    flex-basis: 23%;
-}
-
-/* 3 items */
-.item-33 {
-    flex-basis: 32%;
-}
-
-/* 2 items */
-.item-50 {
-    flex-basis: 48%;
-}
-
-/* 1 item */
-.item-100 {
-    flex-basis: 100%;
 }
 
 /*----------------------------------*/
@@ -129,13 +92,11 @@ footer {
 /* Tablette */
 
 @media screen and (max-width:1024px) {
+
     header {
         text-align: center;
     }
 
-    .container {
-        width: 95%;
-    }
 }
 
 
